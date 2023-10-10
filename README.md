@@ -1,3 +1,46 @@
+
+
+### Goal of the Project
+1. Practice advanced SQL skills including joining, grouping and manipulating.
+2. Practice using Azure Databricks.
+
+### Step 1: Find the Database
+ @misc{anton kozyriev_2023,
+	title={Game Recommendations on Steam},
+	url={https://www.kaggle.com/ds/2871694},
+	DOI={10.34740/KAGGLE/DS/2871694},
+	publisher={Kaggle},
+	author={Anton Kozyriev},
+	year={2023}
+}
+After searching, I found I am interested in this Kaggle Database about game recommendations on Steam.
+I like the topic; it has multiple tables so I can practice joining the tables.
+
+
+### Step 2: Open a Databricks and Load the Data
+1. I created a new Azure Databricks Service and assigned it to the default Resource group.
+2. I created a Computing Cluster for the Databricks.
+3. I tried to upload the files but it is too large, so I uploaded to DBFS, the Databricks File System.
+
+### Step 3: Create Tables from the File
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # DynamoDB Demos
 
 ## CLI Demo

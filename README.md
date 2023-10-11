@@ -11,10 +11,12 @@ I like the topic; it has multiple tables so I can practice joining the tables.
 
 
 ### Step 2: Open a Databricks and Load the Data
-1. I created a new Azure Databricks Service and assigned it to the default Resource group.
-2. I created a Computing Cluster for the Databricks.
-3. I tried to upload the files but it is too large, so I uploaded to DBFS, the Databricks File System.
+1. Create a new Azure Databricks Service and assigned it to the default Resource group.
+2. Create a Computing Cluster for the Databricks.
 * Note: The first cluster I created failed to start because I created a multi-node cluster. Currently, you can only use Azure Student subscription to create a Single node cluster which will have one Driver node with 4 cores.
+3. I tried to upload the files but it is too large, so I uploaded to DBFS, the Databricks File System.
+4. Change Workspace's setting at Admin setting. Enable `Web Terminal` and 
+
 
 
 ### Step 3: Create Tables from the File
@@ -66,6 +68,9 @@ df.write.format("parquet").saveAsTable(permanent_table_name)
 ```
 
 
+### Things to Explore
+* **Global init scripts** at Admin Account: Global init scripts run on all cluster nodes launched in your workspace. They can help you to enforce consistent cluster configurations across your workspace in a safe, visible, and secure manner.
+* 
 
 ## CLI Demo
 

@@ -72,7 +72,24 @@ df.write.format("parquet").saveAsTable(permanent_table_name)
 
 ### Step 4: Advanced Query on the Table
 1. Write SQL query to find the user who reviewed most of the game, and list all of the game he/she has reviewd, and the review she gave to the games. Get the number of games she reviewed and the money she spent on the game
+```SQL
+SELECT
+  u.user_id,
+  u.products,
+  u.reviews,
+  COUNT(g.app_id) AS num_games_reviewed,
+  SUM(g.price_original) AS money_spent_on_games
+FROM default.users u
+LEFT JOIN default.games g ON u.products LIKE CONCAT('%', g.app_id, '%')
+GROUP BY u.user_id, u.products, u.reviews
+ORDER BY num_games_reviewed DESC
+LIMIT 1;
+```
+
+
 2. Write SQL query to filter and get all of the games that has the best review, and sort them by price, also list if they are available on MacOs.
+
+* Note: The table is too large, with 10,000 rows, it took several minutes to run the query.
 
 * Note: You can override the primary language by specifying the language magic command % at the beginning of a cell. For example: `%python` `%SQL%` `%md`
 

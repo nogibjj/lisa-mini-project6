@@ -93,7 +93,7 @@ LIMIT 1;
 SELECT
   app_id,
   title,
-  price_original,
+  CAST(price_original AS DECIMAL(10,2)) AS price_original,
   mac,
   user_reviews
 FROM default.games

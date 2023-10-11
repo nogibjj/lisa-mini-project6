@@ -87,7 +87,19 @@ LIMIT 1;
 ```
 
 
-2. Write SQL query to filter and get all of the games that has the best review, and sort them by price, also list if they are available on MacOs.
+2. Write SQL query to filter and get all of the games that has the best review, and sort them by price, also list if they are available on MacOs. 
+
+```SQL
+SELECT
+  app_id,
+  title,
+  price_original,
+  mac,
+  user_reviews
+FROM default.games
+WHERE user_reviews = 'overwhelmingly positive'
+ORDER BY price_original ASC;
+```
 
 * Note: The table is too large, with 10,000 rows, it took several minutes to run the query.
 

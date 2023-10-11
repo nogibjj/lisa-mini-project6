@@ -19,7 +19,7 @@ I like the topic; it has multiple tables so I can practice joining the tables.
 
 
 
-### Step 3: Create Tables from the File
+### Step 3: Create Tables from the File Using Notebook
 1. Create a dataframe from the csv file.
 ```python
 # File location and type
@@ -66,6 +66,11 @@ permanent_table_name = "recommendations"
 
 df.write.format("parquet").saveAsTable(permanent_table_name)
 ```
+4. Created tables for all csv file and checked the tables at the Catalog Explorer
+<img width="1141" alt="Screenshot 2023-10-10 at 9 27 44 PM" src="https://github.com/nogibjj/lisa-mini-project6/assets/46847817/c3696750-1f24-4d26-9779-3a26b9a8cc9a">
+
+
+### Step 4: Join the Tables
 
 
 ### Things to Explore

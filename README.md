@@ -70,12 +70,15 @@ df.write.format("parquet").saveAsTable(permanent_table_name)
 <img width="1141" alt="Screenshot 2023-10-10 at 9 27 44 PM" src="https://github.com/nogibjj/lisa-mini-project6/assets/46847817/c3696750-1f24-4d26-9779-3a26b9a8cc9a">
 
 
-### Step 4: Join the Tables
+### Step 4: Advanced Query on the Table
+1. Write SQL query to find the user who reviewed most of the game, and list all of the game he/she has reviewd, and the review she gave to the games. Get the number of games she reviewed and the money she spent on the game
+2. Write SQL query to filter and get all of the games that has the best review, and sort them by price, also list if they are available on MacOs.
 
+* Note: You can override the primary language by specifying the language magic command % at the beginning of a cell. For example: `%python` `%SQL%` `%md`
 
 ### Things to Explore
-* **Global init scripts** at Admin Account: Global init scripts run on all cluster nodes launched in your workspace. They can help you to enforce consistent cluster configurations across your workspace in a safe, visible, and secure manner.
-* 
+* Explore **Global init scripts** feature at Admin Account: Global init scripts run on all cluster nodes launched in your workspace. They can help you to enforce consistent cluster configurations across your workspace in a safe, visible, and secure manner.
+* I have issue managing my account and enable Databricks Assistent. Need to debug it.
 
 ## CLI Demo
 

@@ -14,9 +14,8 @@ I like the topic; it has multiple tables so I can practice joining the tables.
 1. Create a new Azure Databricks Service and assigned it to the default Resource group.
 2. Create a Computing Cluster for the Databricks.
 * Note: The first cluster I created failed to start because I created a multi-node cluster. Currently, you can only use Azure Student subscription to create a Single node cluster which will have one Driver node with 4 cores.
+* Now with an organization subscription, I can create a multi-node cluster. But remember to configure a brief automated shutdown time to minimize credit expenses.
 3. I tried to upload the files but it is too large, so I uploaded to DBFS, the Databricks File System.
-4. Change Workspace's setting at Admin setting. Enable `Web Terminal` and 
-
 
 
 ### Step 3: Create Tables from the File Using Notebook
